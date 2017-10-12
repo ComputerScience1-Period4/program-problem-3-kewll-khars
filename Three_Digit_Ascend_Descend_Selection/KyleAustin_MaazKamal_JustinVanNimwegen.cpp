@@ -23,6 +23,10 @@ void pause() {
 }
 
 void main() {
+	int choices = 30
+		
+	while (choices < 30){
+	
 	int x;
 	cout << "Choose a 3 Digit #" << endl;
 	cin >> x;
@@ -33,15 +37,20 @@ void main() {
 	int C = x % 10;
 
 	if ((A > B) && (B > C)) {
-		cout << "Decending" << endl;
+		cout << x << "is decending" << endl;
+		choices ++
 
 	}
 	else if ((A < B) && (B < C)) {
-		cout << "Acending" << endl;
-		}
-	else {
-		cout << "Neither" << endl;
+		cout << x << "is acending" << endl;
+		choices ++
 	}
+	else {
+		cout << x << "is neither" << endl;
+		choices ++
+	
+	}
+	}	
 
 	pause();
 }
